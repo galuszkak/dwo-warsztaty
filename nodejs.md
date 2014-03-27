@@ -13,7 +13,7 @@ NodeJS Open Source
 7. Automatyzuj czynności (gulp, grunt)
 8. Dodaj node_modules do .gitignore
 9. Stosuj to samo formatowanie kodu w całym projekcie
-10. Pisz testy - dokumentują kod.
+10.Pisz testy - dokumentują kod
 
 2. Styl kodowania
 --------------------------------------
