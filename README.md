@@ -7,7 +7,7 @@ Thanks to
 ---------
 
 * Piotr "bass" Kościelniak
-* Agnieszka "womenonrails" Matysek
+* Agnieszka [womanonrails](https://github.com/womanonrails) Matysek
 * Michał Pipa
 * Justyna "Ustinez" Żarna
-* Aleksander "Torrocus" Małaszkiewcz
+* Aleksander [torrocus](https://github.com/torrocus) Małaszkiewicz
