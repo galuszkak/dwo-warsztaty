@@ -196,3 +196,7 @@ Zalecane jest stosowanie standardu [numeracji wersji](http://en.wikipedia.org/wi
 - [coveralls](https://coveralls.io/)
 - [Code Climate](https://codeclimate.com/)
 - [waffle](https://waffle.io/)
+- [Ruby Sadist](http://ruby.sadi.st/Ruby_Sadist.html)
+- [Reek](https://github.com/troessner/reek)
+- [Rubocop](https://github.com/bbatsov/rubocop)
+- [Rails best practises](https://github.com/railsbp/rails_best_practices)
