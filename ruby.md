@@ -163,6 +163,26 @@ guard
 Aby umożliwić innym łatwe użytkowanie gemu można go wrzucić na specjalny serwer.
 Jednym z najpopularniejszych serwerów jest [RubyGems](http://rubygems.org).
 
+1. Budowanie paczki z gemem:
+<code>
+gem build [nazwa-gemu].gemspec
+</code>
+
+2. Wdrożenie paczki:
+<code>
+gem push [nazwa-gemu]-X.Y.Z.gem
+</code>
+
+X.Y.Z to numery wersji.
+Zalecane jest stosowanie standardu [numeracji wersji](http://en.wikipedia.org/wiki/Software_versioning):
+- major (numer główny), czyli X
+- minor (numer dodatkowy), czyli Y
+- release (numer wydania), czyli Z
+
+### Testowanie na wielu środowiskach ###
+
+[Travis CI](https://travis-ci.org/) to narzędzie, które pozwala na testowanie gemu w różnych środowiskach w sposób automatyczny.
+
 ## Linki ##
 
 - [Instalacja i konfiguracja](https://github.com/fractalsoft/dotfiles)
