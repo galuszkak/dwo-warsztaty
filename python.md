@@ -6,23 +6,41 @@ Python Open Source
 ### Zen of Python ###
 
 Beautiful is better than ugly.
+
 Explicit is better than implicit.
+
 Simple is better than complex.
+
 Complex is better than complicated.
+
 Flat is better than nested.
+
 Sparse is better than dense.
+
 Readability counts.
+
 Special cases aren't special enough to break the rules.
+
 Although practicality beats purity.
+
 Errors should never pass silently.
+
 Unless explicitly silenced.
+
 In the face of ambiguity, refuse the temptation to guess.
+
 There should be one-- and preferably only one --obvious way to do it.
+
 Although that way may not be obvious at first unless you're Dutch.
+
 Now is better than never.
+
 Although never is often better than *right* now.
+
 If the implementation is hard to explain, it's a bad idea.
+
 If the implementation is easy to explain, it may be a good idea.
+
 Namespaces are one honking great idea -- let's do more of those!
 
 ## Zestaw startowy ##
@@ -51,30 +69,40 @@ Namespaces are one honking great idea -- let's do more of those!
 
 Virtualenv to proste narzędzie umożliwiające tworzenie wirtualnych środowisk dla Pythona.
 Pozwala na zarządzanie zależnościami i ich wersjami, dzięki temu możemy uniknąć konfliktów związanych z koniecznością instalacji/reinstalacji Pythona i jego bibliotek globalnie przy zmianie projektu/kontekstu.
+
 Każdy projekt powinien mieć własny virtualenv.
 
 Instalacja:
+
 <code>
 sudo pip install virtualenv
 </code>
+
 lub
+
 <code>
-sudo pip install python-virtualenv
+sudo apt-get install python-virtualenv
 </code>
+
 [Na innych systemach](http://www.virtualenv.org/en/latest/#installation)
 
 Tworzenie i aktywacja virtualenva:
 
 Najpierw warto utworzyć katalog, który będzie przechowywał wszystkie virtualenvy:
+
 <code>
 mkdir .virtuals
+
 cd .virtuals
 </code>
 
 Tworzenie i aktywacja:
+
 <code>
 virtualenv example-virtualenv
+
 cd example-virtualenv
+
 source bin/activate
 </code>
 
@@ -86,19 +114,24 @@ W efekcie:
 ### Pip - pythonowy package manager ###
 
 Instalacja bibliotek Pythona:
+
 <code>
 pip install <nazwa biblioteki>
 </code>
 
 Odinstalowywanie:
+
 <code>
 pip uninstall <nazwa biblioteki>
 </code>
 
 W celu łatwego zarządzania zależnościami warto utworzyć sobie w projekcie plik requirments, który będzie zawierał nazwy bibliotek wraz z wersjami:
+
 <code>
 touch requirements.txt
+
 vim requirements.txt
+
 <nazwa-biblioteki>==<wersja-biblioteki>
 </code>
 
@@ -108,6 +141,7 @@ pip install -r requirements.txt
 </code>
 
 Aby "zamroźić" stan obecnego środowiska do pliku wraz z wersjami:
+
 <code>
 pip freeze >> output_file.txt
 </code>
@@ -115,6 +149,7 @@ pip freeze >> output_file.txt
 ### Repozytorium projektu ###
 
 Rekomenduję, aby na potrzebę warsztatów repozytorium stworzyć na GitHubie, a następnie sklonować je na dysk.
+
 <code>
 git clone git@github.com:<github username>/<nazwa projektu>.git
 cd <nazwa-projektu>
@@ -139,17 +174,21 @@ Więcej [tutaj-Style Guide] (http://legacy.python.org/dev/peps/pep-0008/)
 ## Dokumentacja (Sphinx) ##
 
 ### Setup ###
+
 Folder dla dokumentacji:
+
  <code>
  mkdir doc
  </code>
 
 Instalacja Sphinxa:
+
 <code>
 pip install sphinx
 </code>
 
 Setup konfiguracji (w nawiasach [tu] podane są domyślne opcje):
+
 <code>
 sphinx-quickstart
 </code>
@@ -182,9 +221,13 @@ Partycypowanie w projektach Open Source uczy i pozwala utrwalić te zasady.
 ## Sciągi! ##
 
 [git, virtualenv, pip, tworzenie dokumentacji](https://dont-be-afraid-to-commit.readthedocs.org/en/latest/cheatsheet.html)
+
 [Style Guide] (http://legacy.python.org/dev/peps/pep-0008/)
+
 [jak włączać się w projekty Open Sourcowe - na przykładzie Django](https://docs.djangoproject.com/en/1.6/internals/contributing/)
+
 [jeszcze więcej o pracy z Gitem i GitHubem](https://docs.djangoproject.com/en/1.6/internals/contributing/writing-code/working-with-git/)
+
 
 
 
