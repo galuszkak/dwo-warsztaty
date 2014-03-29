@@ -54,7 +54,7 @@ Dlatego jeśli kod ma być rozwijany przez kilka osób testy są niezbędne.
 Dla gemów jest to również rodzaj dokumentacji.
 Testy pozwalają definiować funkcjonalności.
 Sprawiają, że powstały kod jest najprostrzy z możliwych.
-Panuje tutaj [reguła KISS].
+Panuje tutaj [reguła KISS](http://en.wikipedia.org/wiki/KISS_principle).
 
 Istnieje wiele frameworków do testowania kodu w Ruby. Można używać:
 - RSpec
@@ -102,7 +102,7 @@ Należy edytować plik /spec/spec_helper.rb i w nagłówku tego pliku dopisać g
 require '[nazwa-gemu]'
 </code>
 
-Nie należy podawać katalogu lib w ścieżce, wystarczy sama nazwa.
+Nie należy podawać katalogu /lib w ścieżce, wystarczy sama nazwa.
 
 Uruchamianie testów:
 <code>
@@ -125,6 +125,43 @@ Dzięki temu trzymając się konwencji wiele rzeczy można zautomatyzować.
 
 Istnieje wiele narzędzi do automatyzacji często powtarzalnych czynności.
 Jednym z takich narzędzi jest guard.
+
+#### Guard ####
+
+Popularne gemy związane z guardem:
+* guard - gem służący do sekwencyjnego uruchamiania procesów
+* guard-bundler - gem automatyzujący uruchamianie bundlera
+* guard-rspec - gem automatyzujący uruchamianie testów
+
+1. Dodanie gemów do Gemfile lub pliku gemspec:
+<code>
+gem 'guard'
+gem 'guard-bundler'
+gem 'guard-rspec'
+</code>
+
+2. Dociągnięcie gemów i zależności:
+<code>
+bundle install
+</code>
+
+3. Instalacja i konfiguracja:
+<code>
+guard init
+</code>
+
+W katalogu głównym gemu powstanie plik Guardfile.
+Znajduje się w nim konfiguracja, które procesy automatyzować.
+
+Uruchamianie guarda:
+<code>
+guard
+</code>
+
+### Wypuszczanie gemu do użytku ###
+
+Aby umożliwić innym łatwe użytkowanie gemu można go wrzucić na specjalny serwer.
+Jednym z najpopularniejszych serwerów jest [RubyGems](http://rubygems.org).
 
 ## Linki ##
 
