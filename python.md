@@ -90,24 +90,18 @@ Tworzenie i aktywacja virtualenva:
 
 Najpierw warto utworzyć katalog, który będzie przechowywał wszystkie virtualenvy:
 
-<code>
-mkdir .virtuals
-cd .virtuals
-</code>
+    $ mkdir .virtuals
+    $ cd .virtuals
 
 Tworzenie i aktywacja:
 
-<code>
-virtualenv example-virtualenv
-cd example-virtualenv
-source bin/activate
-</code>
+    $ virtualenv example-virtualenv
+    $ cd example-virtualenv
+    $ source bin/activate
 
 W efekcie:
 
-<code>
-(example-virtualenv)~/.virtuals/example-virtualenv$
-</code>
+    (example-virtualenv)~/.virtuals/example-virtualenv$
 
 ### Pip - pythonowy package manager ###
 
@@ -125,32 +119,24 @@ pip uninstall <nazwa biblioteki>
 
 W celu łatwego zarządzania zależnościami warto utworzyć sobie w projekcie plik requirments, który będzie zawierał nazwy bibliotek wraz z wersjami:
 
-<code>
-touch requirements.txt
-vim requirements.txt
-<nazwa-biblioteki>==<wersja-biblioteki>
-</code>
+    $ touch requirements.txt
+    $ vim requirements.txt
+    <nazwa-biblioteki>==<wersja-biblioteki>
 
 Następnie, aby zainstalowac zależności z pliku:
 
-<code>
-pip install -r requirements.txt
-</code>
+    $ pip install -r requirements.txt
 
 Aby "zamroźić" stan obecnego środowiska do pliku wraz z wersjami:
 
-<code>
-pip freeze >> output_file.txt
-</code>
+    $ pip freeze >> output_file.txt
 
 ### Repozytorium projektu ###
 
 Rekomenduję, aby na potrzebę warsztatów repozytorium stworzyć na GitHubie, a następnie sklonować je na dysk.
 
-<code>
-git clone git@github.com:<github username>/<nazwa projektu>.git
-cd <nazwa-projektu>
-</code>
+    $ git clone git@github.com:<github username>/<nazwa projektu>.git
+    $ cd <nazwa-projektu>
 
 ## Let's do magic! ##
 
