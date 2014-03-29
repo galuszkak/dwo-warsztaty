@@ -92,7 +92,6 @@ Najpierw warto utworzyć katalog, który będzie przechowywał wszystkie virtual
 
 <code>
 mkdir .virtuals
-
 cd .virtuals
 </code>
 
@@ -100,13 +99,12 @@ Tworzenie i aktywacja:
 
 <code>
 virtualenv example-virtualenv
-
 cd example-virtualenv
-
 source bin/activate
 </code>
 
 W efekcie:
+
 <code>
 (example-virtualenv)~/.virtuals/example-virtualenv$
 </code>
@@ -129,13 +127,12 @@ W celu łatwego zarządzania zależnościami warto utworzyć sobie w projekcie p
 
 <code>
 touch requirements.txt
-
 vim requirements.txt
-
 <nazwa-biblioteki>==<wersja-biblioteki>
 </code>
 
 Następnie, aby zainstalowac zależności z pliku:
+
 <code>
 pip install -r requirements.txt
 </code>
