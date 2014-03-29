@@ -28,6 +28,19 @@ Korzystanie z GitHuba. FAQ.
 4. Używanie numerów ticketa?
 5. Branche, jak je przeglądać, po co są, jak je zamykać?
 
+Tutorial
+
+1. Pobrać repozytorium https://github.com/piotrekbass/dwo2014-warsztaty
+2. Stworzyć brancha na którym będziemy pracować <code>git branch moj_branch</code>
+3. <code>git checkout moj_branch</code>
+4. Dopisać funkcję i test do niej test. 
+5. Stworzyć forka
+6. <code> git remote add nazwa_remote https://github.com/moj_login/dwo2014-warsztaty</code>
+7. <code>git commit -a</code>
+8. <code>git push nazwa_remote moj_branch</code>
+9. Stworzyć Pull Requesta do głównego repozytorium
+10. And it's done :)
+
 
 2. Współpraca, kultura, dobre praktyki
 --------------------------------------
