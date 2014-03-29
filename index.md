@@ -66,6 +66,10 @@ Dzisiaj wiele projektów Open Source zyskuje na tym, że istnieje wiele usług k
 
 Poniżej przedstawię parę usług z których warto korzystać przy tworzeniu lub angażowaniu się w projekt open source
 
+* TravisCI
+* Drone.io
+* coveralls
+* codeclimate.com
 
 
 4. Narzędzia do pair programming
